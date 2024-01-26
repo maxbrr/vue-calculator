@@ -1,11 +1,12 @@
 <script setup lang="ts">
 
+defineProps(["term", "result"]);
 </script>
 
 <template>
   <div id="calculator-display">
-    <h3 id="term">3 + 4 + 5</h3>
-    <h3 id="result">3 + 4 + 5</h3>
+    <h3 id="term">{{ term }}</h3>
+    <h3 id="result">{{ result }}</h3>
   </div>
 </template>
 
@@ -21,6 +22,7 @@
 #term {
   text-align: left;
   margin-left: 3px;
+  margin-top: 2px;
 }
 
 #result {
